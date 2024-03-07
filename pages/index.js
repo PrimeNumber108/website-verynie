@@ -45,7 +45,7 @@ export default function Home() {
   return (
     <div>
       <div className="relative w-full h-screen">
-        <video className="brightness-90" autoPlay={true} muted loop>
+        <video className="object-cover w-full h-full brightness-90" autoPlay={true} muted loop>
           <source src="/image/banners/banner-0.mp4" type="video/mp4"></source>
         </video>
         <div className="absolute inset-0 flex items-center justify-center">
@@ -58,13 +58,13 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="relative w-full min-h-screen">
+      <div className="relative w-full !min-h-screen">
         <div className="absolute inset-0">
           <Image
             src="/image/banners/banner-1.jpg"
             alt="verynie"
             fill
-            className="object-cover object-top w-full h-full -z-10 brightness-[0.9]"
+            className="object-cover w-full h-full -z-10 brightness-[0.9]"
           />
         </div>
         <div className="absolute inset-0 flex">
